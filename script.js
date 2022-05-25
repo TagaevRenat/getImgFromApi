@@ -13,13 +13,13 @@ async function getImg(x) {
         let url = objects[0].url
         document.querySelector('#img').src = url
     }
-    catch {
+    catch (error) {
         if (x < 1 || x > 5000) {
             x = 1
             getImg(x)
         }
         else {
-            alert('Error!')
+            alert(`Произошла ошибка: ${error.message}. Проверьте подключение к сети интернет. При наличии исправного подключения попробуйте отправить запрос чуть позже.`)
         }
     }
     finally {

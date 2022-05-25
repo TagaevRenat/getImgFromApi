@@ -1,14 +1,39 @@
 #countainer {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .image0 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    /* margin-left: auto;
+    margin-right: auto; */
     width: 50%;
-    margin-bottom: 10px;
-    height: 300px;
+    /* margin-bottom: 10px; */
+    height: 100vh;
     width: 300px;
+    margin: 0px auto;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.btn:hover {
+    background-color: #4CAF50;
+    color: white;
+    border: 2px white;
+    border-radius: 2px;
+}
+
+.btn:active {
+    background-color: rgb(202, 248, 202);
+    color: black;
+    border: 2px white;
+    border-radius: 2px;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+
 }
